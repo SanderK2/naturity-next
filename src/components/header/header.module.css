@@ -1,0 +1,324 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.nav_u {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.logolink {
+  display: block;
+}
+
+.logo {
+  height: 45px;
+  width: 137px;
+  margin: 20px;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #058c51;
+}
+
+.butikkWrapper {
+  position: relative;
+}
+
+.butikkLink {
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  height: 85px;
+  transition: color 0.2s ease;
+}
+
+.butikkDropdown {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  align-items: flex-start;
+  transition: opacity 0.3s ease;
+}
+
+.butikkDropdown a {
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 10px;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+
+.butikkDropdown a:hover {
+  background-color: #f4f4f5;
+}
+
+
+.butikkDropdown div {
+  text-align: center;
+}
+
+.butikkDropdown h3 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #058c51;
+  font-weight: 400;
+}
+
+.mld_const {
+  background-color: #007542;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: .3rem;
+  flex-wrap: wrap;
+}
+
+.mld_varsel  {
+  background-color: #f4f4f5;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.v_mld {
+  width: 90vw;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.v_link_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.v_link {
+  color: #ffffff;
+  display: block;
+  background-color: #007542;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  border-bottom: solid 2px transparent;
+  transition: background-color 0.2s ease;
+}
+
+.v_link:hover {
+  background-color: #058c51;
+  transition: background-color 0.2s ease;
+}
+
+.v_lukk {
+  width: 10vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lukk_btn {
+  border: none;
+  background: none;
+  color: #6d798b;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: 300;
+}
+
+.lukk_btn:hover {
+  color: #058c51;
+  transition: color 0.3s ease;
+}
+
+.burger {
+  display: none;
+  margin: 10px;
+  padding: 10px;
+  z-index: 3;
+}
+
+.burger>div {
+  height: 3px;
+  width: 25px;
+  background-color: #6d798b;
+  margin: 5px 0;
+}
+
+.burgerMenu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f4f4f5;
+  height: 100%;
+  padding-top: calc(45px + 40px + 1.2rem);
+  min-width: 60vw;
+  z-index: 2;
+}
+
+.bm_links {
+  display: flex;
+  flex-direction: column;
+}
+
+.bm_b_links {
+  padding-right: 15px;
+  border-top: solid 3px #dddddd;
+  border-bottom: solid 3px #dddddd;
+  text-align: right;
+}
+
+.bm_b_links>h3 {
+  color: #058c51;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.bm_link, .bm_b_link, .bm_links>button {
+  text-decoration: none;
+  display: block;
+  color: #6d798b;
+  margin: 10px;
+  padding: 5px;
+  text-align: right;
+  font-size: 1.3rem;
+}
+
+.bm_b_link {
+  font-size: 1.2rem;
+}
+
+.bm_links>button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bm_links>button>img {
+  height: 1.5rem;
+}
+
+.bm_bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .3;
+  z-index: 1;
+  background: #000000;
+  transition: opacity 0.3s ease;
+}
+
+.btkExpand {
+  transition: transform 0.2s ease;
+}
+
+.btk_expanded {
+  transform: rotate(180deg);
+}
+
+.findStore {
+  min-width: 177px;
+  display: flex;
+  justify-content: center;
+}
+
+.findStore>a {
+  padding: 10px;
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.findStore>a:hover {
+  color: #058c51;
+}
+
+.findStore img {
+  height: 1.5rem;
+  margin-right: .1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .burger {
+    display: block;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+
+  .link, .butikkLink {
+    display: none;
+  }
+
+  .v_mld {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .v_link {
+    margin-top: 0.4rem;
+  }
+
+  .lukk_btn {
+    font-size: 1.3rem;
+  }
+
+  .nav_u {
+    margin-right: 0;
+  }
+
+  .bm_bg {
+    display: block;
+  }
+
+  .mld_const_desktop {
+    display: none;
+  }
+
+  .findStore {
+    display: none;
+  }
+}

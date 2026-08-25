@@ -1,0 +1,23 @@
+.trustpilot_widget {
+    display: flex;
+    justify-content: center;
+}
+
+.trustpilot_widget a>img {
+    width: auto;
+    height: 1.3rem;
+    margin-left: .4rem;
+}
+
+.trustpilot_widget a {
+    background-color: #fff;
+    border: 1px solid #00b67a;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
